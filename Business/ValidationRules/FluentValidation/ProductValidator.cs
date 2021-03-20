@@ -19,12 +19,12 @@ namespace Business.ValidationRules.FluentValidation
             //olmayan bir kuralı kendimizde yazabiliriz Must kullanarak
             //StartWithA bizim metodumuz
             //WithMessage -> Hata olursa sebebini söylüyoruz
-           // RuleFor(p => p.ProductName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı");
+           RuleFor(p => p.ProductName).Must(StartWithA).WithMessage("Ürünler A harfi ile başlamalı");
         }
 
-        /*private bool StartWithA(string arg)
+        private bool StartWithA(string arg)
         {
             return arg.StartsWith("A");
-        }*/
+        }
     }
 }
